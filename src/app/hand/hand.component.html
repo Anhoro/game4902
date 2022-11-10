@@ -1,0 +1,13 @@
+<div class="hand__container">
+  <div class="hand__wrapper">
+    <ul class="hand">
+      <!-- + 1 -->
+      <li class="hand__card"
+          *ngFor="let card of cards; let i = 'index + 1'"
+          [card]="card"
+          [index]="i"
+          app-hand-card>
+      </li>
+    </ul>
+  </div>
+</div>

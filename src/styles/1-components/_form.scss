@@ -1,0 +1,123 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-size: 26px;
+}
+
+.form__container {
+  width: 100%;
+}
+
+.form__label {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #444;
+}
+
+.form__input {
+  width: 100%;
+  padding: 0 5px;
+  box-sizing: border-box;
+
+  background-color: transparent;
+  border: 0;
+  border-bottom: 4px solid rgb(214, 178, 111);
+  outline: none;
+}
+
+.form .ng-invalid.ng-touched {
+  border-bottom-color: red;
+}
+
+.btn_above-input {
+  position: absolute;
+  right: 2px;
+  top: 26px;
+}
+
+.btn_form-submit {
+  margin-bottom: 30px;
+}
+
+.container_input {
+  position: relative;
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.container_input .form__label {
+  display: block;
+}
+
+.form__select {
+  font-size: 20px;
+}
+
+.btn_close-modal {
+  position: absolute;
+  top: -5px;
+  right: 20px;
+}
+
+.form__input_success {
+  border-color: green;
+}
+
+.form__message {
+  color: red;
+  font-size: 20px;
+}
+
+.form__message_warning {
+  color: rgb(255, 123, 0);
+  font-size: 20px;
+}
+
+.form__message_warning::after,
+.form__message_first::after {
+  content: '\A';
+
+  white-space: pre;
+}
+
+.form__label_checkbox {
+  padding: 10px 10px 10px 50px;
+
+  cursor: pointer;
+}
+
+/* там есть два способа:
+1 https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+2 ты использовал ниже */
+
+.visually-hidden:checked + .form__label_checkbox::before {
+  background-color: rgb(214, 178, 111);
+  background-image: url("../../assets/images/icon-ckecked.svg");
+  background-size: 26px 26px;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+.form__label_checkbox::before {
+  content: '';
+
+  position: absolute;
+  //display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 7px 7px 7px 7px;
+  box-sizing: border-box;
+  //margin-right: 8px;
+  //margin-bottom: 8px;
+  top: 5px;
+  left: 0;
+
+  font-size: 24px;
+  fill: rgb(245, 245, 245);
+  color: rgb(245, 245, 245);
+  background-color: #aaa;
+  cursor: pointer;
+  //background: center center/20px 20px no-repeat url("../images/checkbox-false.png");
+}

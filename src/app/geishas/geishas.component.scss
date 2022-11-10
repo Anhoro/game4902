@@ -1,0 +1,19 @@
+.geishas__board {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.geishas__item-cards {
+  height: 22%;
+}
+
+.geishas {
+  display: flex;
+  justify-content: space-around;
+  height: 56%;
+}
+
+.geishas__card {
+  width: 13%;
+}

@@ -1,0 +1,11 @@
+<div class="geishas__board">
+  <div class="geishas__item-cards"></div>
+  <ul class="geishas">
+    <li *ngFor="let geisha of geishas"
+        class="geishas__card"
+        [geisha]="geisha"
+        app-geisha>
+    </li>
+  </ul>
+  <div class="geishas__item-cards"></div>
+</div>
